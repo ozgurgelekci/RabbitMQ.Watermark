@@ -19,6 +19,7 @@ builder.Services.AddSingleton(opt =>
 );
 
 builder.Services.AddSingleton<RabbitMQClientService>();
+builder.Services.AddSingleton<RabbitMQPublisher>();
 
 var app = builder.Build();
 
